@@ -12,8 +12,7 @@ app.use(cors());
 // convert everything to json
 app.use(express.json());
 
-//iWpXy3jCsYH4MoXh
-mongoose.connect(`mongodb+srv://lenem83769:iWpXy3jCsYH4MoXh@cluster0.8bqsp.mongodb.net/test`)// useNewUrlParser is a deprecated option: useNewUrlParser has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+mongoose.connect(`mongodb://localhost:27017/test`)// useNewUrlParser is a deprecated option: useNewUrlParser has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
 
     .then(() => console.log("mongodb connected..."))
     .catch((err) => console.log(err));

@@ -121,7 +121,7 @@ const updateCourse = async (req, res) => {
                 }
             );
             if (!response) {
-                response.status(500).json({ Message: "Course not updated", status: false });
+                res.status(500).json({ Message: "Course not updated", status: false });
             } else {
                 res.status(200).json({ Message: "Course updated", status: true, data: response });
             }

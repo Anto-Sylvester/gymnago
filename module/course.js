@@ -112,7 +112,7 @@ const courseSchema = new mongoose.Schema(
             },
             selectedDatesTimings: [
                 {
-                    sameEveryDay: { type: Boolean, default: true },
+                    sameEveryDay: { type: Boolean, default: false },
                     days: {
                         type: [String],
                         enum: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
